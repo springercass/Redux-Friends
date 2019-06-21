@@ -1,0 +1,21 @@
+.friendCard {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 3% 3%;
+  text-align: center;
+  background-image: url("./images/blank.png");
+}
+
+.friendCard h2 {
+  padding: 2% 0 0 0;
+}
+
+.ageCSS {
+  padding: 40% 0 0 0;
+}
+.emailCSS {
+  font-size: 1.1rem;
+  text-align: left;
+  position: absolute;
+}

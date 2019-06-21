@@ -4,7 +4,13 @@ const FriendsForm = props => {
   return (
     <div className="formCSS">
       <h2>Join My Friends!</h2>
-      <form onSubmit={props.addFriend} className="friendsFormCSS">
+      <form
+        onSubmit={e => {
+          e.preventDefault();
+          props.addFriend(props.newFriend);
+        }}
+        className="friendsFormCSS"
+      >
         <input
           type="text"
           name="name"

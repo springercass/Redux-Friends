@@ -1,7 +1,8 @@
 import {
   FETCH_DATA_START,
   FETCH_DATA_SUCCESS,
-  FETCH_DATA_FAILURE
+  FETCH_DATA_FAILURE,
+  ADD_FRIEND
 } from "../actions";
 
 const initialState = {
@@ -34,6 +35,12 @@ const fetchDataReducer = (state = initialState, action) => {
         ...state,
         fetchingFriends: false,
         error: action.payload
+      };
+    case ADD_FRIEND:
+      return {
+        ...state,
+        friends: action.payload,
+        error: null
       };
     default:
       return state;
