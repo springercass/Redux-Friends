@@ -3,9 +3,48 @@
   flex-direction: row-reverse;
 }
 
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 20%;
+  height: 200px;
+  margin: 15% auto;
+}
+
+.loginLink {
+  font-size: 1.6rem;
+  padding: 2%;
+  color: black;
+}
+
+h1 {
+  margin: 2%;
+}
+
+.loginInput {
+  margin: 2%;
+  height: 20px;
+}
+
+.loginButton {
+  width: 25%;
+  margin: 2%;
+  background-color: rgb(133, 133, 226);
+  color: white;
+  border: none;
+  padding: 2%;
+}
+
 .loginForm {
   display: flex;
   flex-direction: column;
+}
+
+input::placeholder {
+  padding: 0 0 0 2%;
 }
 
 .friendsListCSS {

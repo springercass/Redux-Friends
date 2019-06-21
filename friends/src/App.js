@@ -9,14 +9,8 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Route
-          exact
-          path="/"
-          render={props => {
-            return <Link to="/login">Login</Link>;
-          }}
-        />
+      <div className="Body">
+        <Route exact path="/" component={Login} />
         <Route exact path="/login" component={Login} />
         <PrivateRoute exact path="/protected" component={FriendsList} />
       </div>
